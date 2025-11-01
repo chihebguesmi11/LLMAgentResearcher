@@ -119,6 +119,8 @@ LLMAgentResearcher/
 | Rice husk biochar | Biochar from rice husk...   | Lead (Pb)        | 150 mg/g           | Pages 5-7       |
 | Bamboo biochar    | Biochar from bamboo...      | Copper (Cu)      | 200 mg/g           | Pages 8-10      |
 ```
+## ScreenShot of the terminal's output
+![output](images/output.png)
 
 ##  Technologies Used
 
