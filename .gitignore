@@ -1,0 +1,30 @@
+# Virtual environment
+venv/
+env/
+
+# Environment variables (SENSITIVE!)
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Output files
+output/
+*.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
