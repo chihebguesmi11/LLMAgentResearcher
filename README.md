@@ -2,7 +2,16 @@
 
 An intelligent agent built with LangGraph and Gemini that extracts biochar information from research papers.
 
-## 🎯 Overview
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-00ADD8?style=for-the-badge&logo=chainlink&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-9146FF?style=for-the-badge&logo=graph&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![PyPDF](https://img.shields.io/badge/PyPDF-2C2D72?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)
+![AI Agents](https://img.shields.io/badge/AI%20Agents-FF6F00?style=for-the-badge&logo=openai&logoColor=white)
+
+## Overview
 
 This project uses a multi-agent workflow to:
 - Load and process PDF research papers
@@ -10,7 +19,7 @@ This project uses a multi-agent workflow to:
 - Answer specific questions about biochar properties
 - Generate formatted tables of findings
 
-## 🏗️ Architecture
+## Architecture
 
 The agent uses **chunked processing** with the following workflow:
 ```
@@ -25,17 +34,17 @@ START → load_pdf → analyze_chunk ⟲ → format_output → END
 - **Conditional Edges**: Loop through chunks until complete
 - **LLM**: Google Gemini 1.5 Flash for extraction
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Python 3.9+
-- Google Gemini API key ([Get one here](https://aistudio.google.com/app/apikey))
+- Google Gemini API key (
 
 ### Setup
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/YOUR_USERNAME/LLMAgentResearcher.git
+git clone https://github.com/chihebguesmi11/LLMAgentResearcher.git
 cd LLMAgentResearcher
 ```
 
@@ -69,7 +78,7 @@ Place your PDF in the `data/` folder:
 data/research_paper.pdf
 ```
 
-## 🚀 Usage
+## Usage
 
 Run the agent:
 ```bash
@@ -83,7 +92,7 @@ The agent will:
 4. Generate a markdown table
 5. Save results to `output/biochar_results.md`
 
-## 📂 Project Structure
+##  Project Structure
 ```
 LLMAgentResearcher/
 ├── data/                   # Input PDFs
@@ -103,7 +112,7 @@ LLMAgentResearcher/
 └── README.md
 ```
 
-## 🎨 Example Output
+##  Example Output
 ```markdown
 | Biochar Name      | What is the Biochar?        | Targeted Molecule | Adsorption Capacity | Location        |
 |-------------------|-----------------------------|-------------------|---------------------|-----------------|
@@ -111,15 +120,15 @@ LLMAgentResearcher/
 | Bamboo biochar    | Biochar from bamboo...      | Copper (Cu)      | 200 mg/g           | Pages 8-10      |
 ```
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **LangGraph**: Agentic workflow orchestration
 - **LangChain**: LLM integration
-- **Google Gemini**: 1.5 Flash model for text extraction
+- **Google Gemini**: Gemini-2.5-flash-lite model for text extraction
 - **pypdf**: PDF text extraction
 - **Pandas**: Data manipulation and table formatting
 
-## ⚙️ Configuration
+## Configuration
 
 Customize behavior in `src/main.py`:
 ```python
@@ -134,7 +143,7 @@ questions = [
 pages_per_chunk = 3  # Process 3 pages at a time
 ```
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### API Key Not Found
 ```bash
@@ -153,7 +162,7 @@ pip install -r requirements.txt
 - Check file path in `main.py`
 - Verify PDF is not corrupted
 
-## 📝 Future Improvements
+## Future Improvements
 
 - [ ] Add deduplication for biochars mentioned multiple times
 - [ ] Implement caching to reduce API costs
@@ -169,9 +178,9 @@ MIT License - feel free to use and modify
 
 ## 👤 Author
 
-Your Name - [GitHub Profile](https://github.com/YOUR_USERNAME)
+Chiheb Guesmi - [GitHub Profile](https://github.com/chihebguesmi11)
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Built as a technical exercise for LLM agent development
 - Uses LangGraph framework by LangChain
